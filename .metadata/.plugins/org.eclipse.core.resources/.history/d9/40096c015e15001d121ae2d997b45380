@@ -1,0 +1,21 @@
+package com.cars;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.interfaces.Car;
+
+@Component("c2")				// if we do not give name then in main function use class name in getbean in lower case...
+public class Corolla implements Car {
+
+	@Autowired			//whenever we autowired directly we basically make use of the default constructor
+	Engine engine;
+	
+	@Override
+	public String specs() {
+		
+		String specs="Sedan from Toyota with engine type as "+ engine.type;		// engine.getType();- when we generate getters in Engine class
+		return specs;
+	}
+
+}

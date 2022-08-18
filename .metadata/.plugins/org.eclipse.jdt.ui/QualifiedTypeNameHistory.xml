@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.interfaces.Car"/>
+    <fullyQualifiedTypeName name="com.cars.Swift"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
+    <fullyQualifiedTypeName name="net.bytebuddy.build.Plugin.Engine"/>
+    <fullyQualifiedTypeName name="org.apache.catalina.Engine"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonSubTypes.Type"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.interfaces.Engine"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Scope"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="com.cars.Corolla"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+</qualifiedTypeNameHistroy>

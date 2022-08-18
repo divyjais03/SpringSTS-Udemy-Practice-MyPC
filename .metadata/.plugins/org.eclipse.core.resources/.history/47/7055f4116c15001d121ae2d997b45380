@@ -1,0 +1,10 @@
+package com.interfaces;
+
+import org.springframework.stereotype.Component;
+
+
+public class Engine {
+    String type();
+ 
+
+}

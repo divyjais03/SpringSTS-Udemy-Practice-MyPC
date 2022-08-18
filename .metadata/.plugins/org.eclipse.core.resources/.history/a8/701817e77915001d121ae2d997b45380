@@ -1,0 +1,23 @@
+package com;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+import com.cars.Corolla;
+
+@Configuration					// this tells that this is the configuration class...!
+@ComponentScan("com")			// this tells spring which package needs to be installed??
+public class AppConfig {
+
+	@Bean("c2")
+	public Corolla corolla() {
+		return new Corolla();
+	}
+	
+	@Bean("c1")
+	public Swift swift() {
+		return new Swift();
+	}
+	
+}

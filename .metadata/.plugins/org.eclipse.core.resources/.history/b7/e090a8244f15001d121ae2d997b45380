@@ -1,0 +1,13 @@
+package com.cars;
+
+import com.interfaces.Car;
+
+public class Corolla implements Car {
+
+	@Override
+	public String specs() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

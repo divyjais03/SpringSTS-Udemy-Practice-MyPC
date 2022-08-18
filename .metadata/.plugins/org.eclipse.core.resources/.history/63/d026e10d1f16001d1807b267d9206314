@@ -1,0 +1,25 @@
+package com.specs;
+
+import com.interfaces.Engine;
+
+//@Component("V6Engine")
+public class EngineType implements Engine {
+
+	String type;
+
+	public EngineType() {					// default constructor
+		type = "Unknown";
+	}
+
+	public EngineType(String type) {		//param constructor
+
+		this.type = type;
+	}
+
+	@Override
+	public String type() {
+
+		return type;
+	}
+
+}

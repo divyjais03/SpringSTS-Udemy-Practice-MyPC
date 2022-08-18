@@ -1,0 +1,13 @@
+package com.onmobile;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class BootJpAcrudExampleApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(BootJpAcrudExampleApplication.class, args);
+	}
+
+}

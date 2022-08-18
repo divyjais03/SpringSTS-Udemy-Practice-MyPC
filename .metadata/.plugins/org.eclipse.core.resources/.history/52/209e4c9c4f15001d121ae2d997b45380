@@ -1,0 +1,12 @@
+package com;
+
+import com.cars.Swift;
+
+public class App {
+
+	public static void main(String[] args) {
+		Car swift= new Swift();
+
+	}
+
+}

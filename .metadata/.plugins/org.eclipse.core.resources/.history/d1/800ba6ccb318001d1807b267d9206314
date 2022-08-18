@@ -1,0 +1,26 @@
+package com.onmobile;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import com.onmobile.dao.UserRepository;
+import com.onmobile.model.User;
+
+@SpringBootApplication
+public class BootJpAcrudExampleApplication {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext context= SpringApplication.run(BootJpAcrudExampleApplication.class, args);
+		UserRepository userRepository= context.getBean(UserRepository.class);
+		
+		User user= new User();
+		user.setName("Divyanshu");
+		user.setCity("Amethi");
+		user.setStatus("Backend developer");
+		
+		User user1=userRepository.save(user);
+		System.out.println(user1);
+	}
+
+}

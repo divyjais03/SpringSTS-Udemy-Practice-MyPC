@@ -1,0 +1,16 @@
+package com.cars;
+
+import org.springframework.stereotype.Component;
+
+import com.interfaces.Car;
+
+@Component("c2")				// if we do not give name then in main function use class name in getbean in lower case...
+public class Corolla implements Car {
+
+	@Override
+	public String specs() {
+		
+		return "Sedan from Toyota";
+	}
+
+}

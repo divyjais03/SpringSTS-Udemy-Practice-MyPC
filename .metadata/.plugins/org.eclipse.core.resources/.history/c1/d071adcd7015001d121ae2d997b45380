@@ -1,0 +1,13 @@
+package com;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+import com.fasterxml.jackson.annotation.JsonSubTypes.Type;
+
+@Configuration					// this tells that this is the configuration class...!
+@ComponentScan("com")			// this tells spring which package needs to be installed??
+@Type(value = "prototype")
+public class AppConfig {
+
+}

@@ -1,0 +1,53 @@
+package com.onmobile;
+
+import java.util.List;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import com.onmobile.dao.UserRepository;
+import com.onmobile.model.User;
+
+@SpringBootApplication
+public class BootJpAcrudExampleApplication {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext context= SpringApplication.run(BootJpAcrudExampleApplication.class, args);
+		UserRepository userRepository= context.getBean(UserRepository.class);
+		
+		// Creating object of user1
+		User user1= new User();
+		user1.setId(24);
+		user1.setName("Divyanshu");
+		user1.setCity("Amethi");
+		user1.setStatus("Backend developer");
+		
+		User user2= new User();
+		user2.setId(26);
+		user2.setName("Poplu");
+		user2.setCity("Banglore");
+		user2.setStatus("lost"); 
+		
+		// we save the object actually we are saving it in database.
+		
+//			// Saving single user-- if we have more user then need to write this many times...
+//		User user=userRepository.save(user1);
+//		System.out.println(user1);
+		
+		
+//			// For saving multiple objects
+//		List<User> users=List.of(user1, user2);
+//		Iterable<User> result= userRepository.saveAll(users);
+//				result.forEach(user->{
+//				System.out.println(user);
+//				});
+		
+				
+		
+		System.out.println("Done...");
+		System.out.println(user1);
+		System.out.println(user2);
+	}
+
+}
